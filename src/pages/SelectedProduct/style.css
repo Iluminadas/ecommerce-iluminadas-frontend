@@ -1,0 +1,139 @@
+.cont1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont2 {
+  display: flex;
+  background-color: (105, 104, 104);
+  width: 74%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mb{
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  align-items: center;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.titleDescricao{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: Calibri;
+  align-items: flex-start;
+  margin-top: -160px;
+  
+}
+
+.description-1{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: Calibri;
+  align-items: flex-start;
+  margin-top: -70px;
+}
+
+.col {
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.ImageProduct {
+  width: 80%;
+  
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+  cursor: pointer;
+  
+}
+
+.titleProduct{
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: flex-start;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .ImageProduct{
+    width: 100%;
+  }
+}
+
+.card-selected {
+  max-width: max-content;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 35px;
+  width: 100%;
+}
+
+.btn {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -4px;
+  padding: auto;
+  height: 50px;
+  text-shadow: 0.1em 0.1em 0.2em rgb(105, 104, 104);
+  background: #fd686e;
+ 
+}
+
+
+
+.home-page {
+  align-self: 'center';
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: 0% 13% 10% 13%;
+  background-color: rgb(105, 104, 104);
+}
+
+.txt-prodSem {
+  align-self: center;
+  margin-top: 5%;
+  margin-left: 36%;
+}
+
+text {
+  margin-left: 5%;
+  font-family: Nunito, sans-serif;
+}

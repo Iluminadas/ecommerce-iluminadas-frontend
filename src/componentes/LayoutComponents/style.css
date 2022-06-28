@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:wght@400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Nunito, sans-serif;
+  background-color: rgb(226, 223, 223);
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 35px;
+  background-color: rgb(226, 223, 223);
+  opacity: valor entre 0 e 1;
+}
+
+.wrap-login {
+  max-width: 390px;
+  min-width: 390px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 77px 55px 33px 55px;
+  box-shadow: 0 5px 10px 0px #d2d5af;
+  opacity: valor entre 0 e 1;
+}
+
+@media (max-width: 768px) {
+  .wrap-login {
+    width: 100%;
+    padding: 100px 33px 33px 33px;
+    margin: 0;
+    height: 100vh;
+    
+   
+    
+  }
+
+  .container-login {
+    width: 100%;
+    padding: 0;
+    margin-top: 0px;
+    
+  }
+}
+
+.button-clear {
+  background-color: transparent;
+  border: none;
+  color: #f06c6c;
+  font-size: 20px;
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.wrapperInputDiv {
+  padding: 0 !important;
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  margin-bottom: 6px;
+  margin-top: 0;
+  position: relative;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.login-form-title {
+  font-family: Nunito, sans-serif;
+  display: block;
+  font-size: 30px;
+  color: #3b657a;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.wrap-input {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d2d5af;
+  margin-bottom: 30px;
+  border: #c5c5c5c5 1px solid;
+  border-radius: 5px;
+}
+
+.input {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.897);
+  line-height: 1.2;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  padding: 0 5px;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  color: #dfa49b;
+  font-family: Nunito, sans-serif;
+  font-size: small;
+}
+
+.field {
+  color: #000000;
+  font-size: 13px;
+}
+
+.field-nome {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0e0';
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  color: #b10202;
+}
+
+.field-cpf {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0e0';
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  color: #b10202;
+}
+
+.field-telefone {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0e0';
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  color: #b10202;
+}
+
+.field-email {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0e0';
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  color: #b10202;
+}
+
+.field-senha {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 13px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0e0';
+  position: absolute;
+  top: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+  color: #b10202;
+}
+
+.focus-input::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background-color: #dfa49b;
+}
+
+.focus-input::after {
+  font-family: Nunito, sans-serif;
+  font-size: 14px;
+  color: #bebec0;
+  line-height: 1;
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  padding-left: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* Borda dos inputs */
+.inputIn {
+  border: #c5c5c5c5 1px solid;
+  border-radius: 5px;
+}
+
+/* Estilização da validação dos inputs */
+.input:invalid {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  border: rgb(194, 24, 24) 1px solid;
+  border-radius: 5px;
+}
+
+/* Animação da validação */
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input:focus + .focus-input::after {
+  top: -15px;
+}
+
+.input:focus + .focus-input::before {
+  width: 100%;
+}
+
+.has-val + .focus-input::after {
+  top: -15px;
+}
+
+.has-val + .focus-input::before {
+  width: 100%;
+}
+
+.container-login-form-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 13px;
+}
+
+.area-botao {
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  text-shadow: 0.1em 0.1em 0.2em rgb(105, 104, 104);
+  background: #fd686e;
+}
+
+.login-form-btn:hover {
+  cursor: pointer;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-shadow: 0.1em 0.1em 0.2em #5a3938;
+}
+
+.txt1 {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.2;
+  padding-right: 5px;
+}
+
+.txt2 {
+  font-size: 14px;
+  color: #fd686e;
+  line-height: 1.2;
+  text-decoration: none;
+}
